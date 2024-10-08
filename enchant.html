@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>enchant</title>
-</head>
-<body>
-  <h1>enchant</h1>
-    <a id="downloadLink" href="https://github.com/samugarinoko-minecraftaddon/enchant/releases">ファイルをダウンロード</a>
-    <p id="downloadCount">ダウンロード回数: 0</p>
-    <script>// ダウンロード回数を保存する変数 (ローカルストレージを使用)
-let downloadCount = localStorage.getItem('downloadCount') || 0;
-
-// ダウンロードリンクを取得
-const downloadLink = document.getElementById('downloadLink');
-// ダウンロード回数表示要素を取得
-const countElement = document.getElementById('downloadCount');
-
-// ダウンロードリンクがクリックされたときの処理
-downloadLink.addEventListener('click', () => {
-    // ダウンロード回数を1増やす
-    downloadCount++;
-    // ローカルストレージに保存
-    localStorage.setItem('downloadCount', downloadCount);
-    // 表示を更新
-    countElement.textContent = `ダウンロード回数: ${downloadCount}`;
-});
-
-// 初期表示
-countElement.textContent = `ダウンロード回数: ${downloadCount}`;</script>
-</body>
-</html>
+<title>enchant</title><h1>enchant</h1>
+<a href="dl/enchant-1.0.0.mcpack" download>v.1.0.0ダウンロード</a><br>
+<a href="dl/enchant-1.0.1.mcpack" download>v.1.0.1ダウンロード</a><br>
+<a href="dl/enchant-1.0.2.mcpack" download>v.1.0.2ダウンロード</a><br>
